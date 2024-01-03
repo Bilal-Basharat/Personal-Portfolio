@@ -1,0 +1,78 @@
+.navBar{
+    display: flex;
+    background-color:rgba(255,255,255,0.1);
+    position:sticky;
+    top: 0;
+    /* border: 1px solid yellow; */
+    /* height: 10vh; */
+}
+
+.leftNavBar{
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    padding-left: 120px;
+    align-items: center;
+    /* border: 1px solid black; */
+  }
+
+.centerNavBar{
+    width: 1000px;
+    /* flex: 1; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.centerNavBar a{
+    font-family: 'helvetica Neue' sans-serif;
+    font-size: 20px;
+    color: grey;
+    padding: 20px;
+    /* border: 1px solid black; */
+    text-decoration: none;
+}
+.centerNavBar a:hover{
+  color: rgb(61, 60, 60);
+  font-weight: 500;
+}
+
+/* for mobiles and tablets */
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    height: auto;
+  }
+.leftNavBar img{
+width: 100px;
+margin: 10px;
+
+}
+  .centerNavBar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropDown_Content {
+    position: static;
+    /* display: block; */
+    box-shadow: none;
+  }
+  .dropDown_Content a {
+    display: block;
+    /* box-shadow: none; */
+  }
+
+  .dropDown:hover .dropDown_Content {
+    display: block;
+  }
+
+  .rightNarBar {
+    /* border: 1px solid black; */
+    justify-content: center;
+    margin: 10px 0 15px 0 ;
+    align-items: flex-end;
+  }
+}
